@@ -1,0 +1,156 @@
+/* Assurez-vous que le body et html occupent toute la hauteur */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+/* Corrigez le conteneur des particules */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Assurez-vous qu'il occupe toute la hauteur */
+    z-index: 1; /* Particules derrière */
+}
+
+/* Centrez le formulaire avec flexbox */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Assurez-vous que le body occupe toute la hauteur */
+    margin: 0;
+}
+
+/* Ajustez le conteneur du formulaire */
+/* Ajustez le conteneur du formulaire */
+.container {
+    z-index: 2; /* Formulaire devant */
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95); /* Fond légèrement plus opaque */
+    border-radius: 8px; /* Bordures arrondies */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour le contraste */
+    text-align: center; /* Centrer le contenu */
+    color: #333; /* Couleur du texte */
+}
+
+/* Style pour le titre */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222; /* Couleur plus sombre pour le titre */
+}
+
+/* Style pour les labels */
+label {
+    color: #444; /* Couleur plus sombre pour les labels */
+    font-weight: bold;
+}
+
+/* Style pour les champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    color: #333; /* Couleur du texte dans les champs */
+    background-color: #fff; /* Fond blanc pour les champs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0.5rem 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #f9f9f9; /* Fond légèrement plus clair au focus */
+}
+
+/* Style pour le bouton */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour les messages d'erreur */
+.error-message {
+    color: #d9534f; /* Rouge vif pour les messages d'erreur */
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222; /* Couleur plus sombre pour le titre */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    color: #444; /* Couleur plus sombre pour les labels */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}

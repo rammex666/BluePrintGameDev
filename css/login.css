@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+/* Style pour le conteneur de login */
+.login-container {
+    z-index: 2; /* Assurez-vous qu'il est au-dessus des particules */
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(253, 253, 253, 0.9); /* Fond semi-transparent */
+    border-radius: 8px; /* Bordures arrondies */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour le contraste */
+    text-align: center; /* Centrer le contenu */
+    color: #333;
+}
+
+/* Style pour le titre */
+.login-container h1 {
+    color: #333; /* Couleur du texte */
+    margin-bottom: 20px;
+}
+
+/* Bouton de login */
+.btn.login-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn.login-btn:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Particules derrière */
+}

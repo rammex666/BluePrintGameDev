@@ -18,20 +18,57 @@ body {
 
 
 /* Header */
+/* Header */
 header {
     background: linear-gradient(135deg, #6a1b9a, #4a148c);
     color: white;
-    text-align: center;
-    padding: 3rem 1rem;
+    padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 2;
     position: relative;
+    display: flex;
+    justify-content: space-between; /* Sépare le h1 et les boutons */
+    align-items: center; /* Centre verticalement les éléments */
+    width: 100%; /* Assure que le header prend toute la largeur */
+}
+
+/* Conteneur pour le h1 */
+header .header-content {
+    flex-grow: 1; /* Permet au h1 de prendre tout l'espace disponible */
+    text-align: center; /* Centre le texte du h1 horizontalement */
 }
 
 header h1 {
+    margin: 0; /* Supprime les marges par défaut */
     font-size: 3rem;
-    margin-bottom: 1rem;
 }
+
+/* Boutons à droite */
+header .auth-buttons {
+    display: flex;
+    gap: 10px; /* Ajoute un espace entre les boutons */
+    justify-content: right; /* Centre horizontalement les boutons */
+}
+
+header .auth-buttons .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Ajoute un espace entre l'icône et le texte */
+    background: #9c27b0;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+header .auth-buttons .btn:hover {
+    background: #6a1b9a;
+}
+
+
 
 header p {
     font-size: 1.5rem;
